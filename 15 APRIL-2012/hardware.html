@@ -1,0 +1,102 @@
+<html>
+
+<head>
+
+<title> Hardware</title>
+<script language=JavaScript>
+function process(){
+document.form1.a.value=document.form1.monitor.value*5000;
+document.form1.b.value=document.form1.flatscreen.value*9000;
+document.form1.c.value=document.form1.keyboard.value*300;
+document.form1.d.value=document.form1.mouse.value*300;
+document.form1.e.value=document.form1.harddisk.value*5000;
+document.form1.f.value=document.form1.webcame.value*1000;
+document.form1.g.value=document.form1.scanner.value*4000;
+document.form1.total.value=parseInt(document.form1.a.value)+parseInt(document.form1.b.value)+parseInt(document.form1.c.value)+parseInt(document.form1.d.value)+parseInt(document.form1.e.value)+parseInt(document.form1.f.value)+parseInt(document.form1.g.value);
+}
+</script>
+</head>
+
+
+<body>
+
+<form name=form1>
+<table border="2">
+   <tr>
+      <th>SNO</th>
+      <th>Product  </th>
+      <th>Price </th>
+      <th>Quantity</th>
+      <th>Amount</th>
+      <th>Discraption</th>
+      
+   </tr>
+   <tr>
+      <td>01</td>
+      <td>Monitor</td>
+      <td>5000</td>
+     <td><input type="number" name="monitor" onInput="process();"></td>
+      <td><output name="a" value=0></output></td>
+    
+      
+      <td>17 in lcd dell</td>
+      
+   </tr>
+   <tr>
+      <td>02</td>
+      <td>flat screen</td>
+      <td>9000</td>
+ 	<td><input type="number" name="flatscreen" onInput="process();"></td>
+      <td><output name="b" value=0></output></td>
+      <td>19 inch hp</td>
+      
+   </tr>
+   <tr>
+      <td>03</td>
+      <td>keyboard</td>
+      <td>300</td>
+      <td> <input type=number name=keyboard onInput="process();"></td>
+      <td> <output name=c value=0></output></td>
+      <td>&nbsp;</td>
+      
+   </tr>
+   <tr>
+      <td>04</td>
+      <td>Mouse</td>
+      <td>300</td>
+      <td><input type=number name=mouse onInput="process();">
+      <td><output name=d value=0></output></td>
+   </tr>
+   <tr>
+      <td>05</td>
+      <td>Hard disk</td>
+      <td>5000</td>
+      <td><input type=number name=harddisk onInput="process();">
+      <td><output name=e value=0></output></td>
+      
+      <td>&nbsp;</td>
+      
+   </tr>
+   <tr>
+      <td>06</td>
+      <td>Web cam</td>
+      <td>1000</td>
+      <td><input type=number name=webcame onInput="process();"> 
+      <td><output name=f value=0> </output> </td>
+      
+   </tr>
+   <tr>
+      <td>07</td>
+      <td>scanner</td>
+      <td>4000</td>
+       <td><input type=number name=scanner onInput="process();"></td>
+
+      <td><output name=g value=0></output></td>
+      
+   </tr>
+</table>
+Total=<output name=total value=0></output>
+</form>
+</body>
+
+</html>

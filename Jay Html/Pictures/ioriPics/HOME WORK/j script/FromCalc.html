@@ -1,0 +1,38 @@
+<html>
+<head>
+<script language=JavaScript>
+function calc(){
+	var set=parseInt(document.form1.set.value);
+	var a=parseInt(document.form1.val1.value);
+	var b=parseInt(document.form1.val2.value);
+if(set==1)document.form1.result.value=a+b;
+if(set==2)document.form1.result.value=a-b;
+if(set==3)document.form1.result.value=a*b;
+if(set==4)document.form1.result.value=a/b;
+if(set==5)document.form1.result.value=a%b;
+
+}
+</script>
+
+</head>
+
+
+<body>
+<h1>1.Addition</h1>
+<h1>2.Substration</h1>
+<h1>3.multiplication</h1>
+<h1>4.Division</h1>
+<h1>5.Remender</h1>
+<h2> Selection<h2>
+<form name=form1>
+<input type=text name=set><br>
+
+Enter 1st Value:<input type=text name=val1><br>
+Enter 2nd Value:<input type=text name=val2><br>
+result:<input type=text name=result><br>
+<input type=button value=calculate onClick="calc();" ><br>
+</form>
+
+</body>
+
+</html>

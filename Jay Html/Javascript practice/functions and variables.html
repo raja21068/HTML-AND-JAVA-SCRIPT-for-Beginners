@@ -1,0 +1,22 @@
+<html>
+	<form name=form>
+		VB<input type=text>
+		C++<input type=text>
+		java<input type=text>
+		php<input type=text>
+		.NET<input type=text>
+		<input type=button onClick=marks()>
+	</form>
+	<input>
+	<script language=javascript>
+		function marks(){
+			alert("Welcome to Marksheet..! press ok to proceed");
+			var vb = parseInt(prompt("Enter VB marks:"));
+			var c = parseInt(prompt("Enter C++ marks:"));
+			var java = parseInt(prompt("Enter java marks:"));
+			var php = parseInt(prompt("Enter php marks:"));
+			var net = parseInt(prompt("Enter dot net marks:"));
+			alert("VB : "+vb+"\nC++ : "+c+"\njava : "+java+"\nphp : "+php+"\n.NET : "+net+"\nTotal marks: "+(net+php+java+c+vb));
+		}
+	</script>
+</html>

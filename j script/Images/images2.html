@@ -1,0 +1,22 @@
+<html>
+<head>
+
+<html>
+<head>
+<script language=JavaScript>
+function calc(){
+var n=parseInt(document.form.value1.value);
+for(var i=1;i<=n;i++)
+document.write("<table border=1 bgcolor=yellow><tr><td><img src=" +i+ ".jpg height=100 width=100></tr></table>");
+}
+</script>
+</head>
+
+
+<body bgcolor="pink">
+<form name=form>
+<input type=text name=value1>
+<input type=button value=Ok onClick=calc();>
+</form>
+</body>
+</html>

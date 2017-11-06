@@ -1,0 +1,34 @@
+<script language=javascript>
+var num=new Array();
+var n=parseInt(prompt("Enter Array size ",""));
+
+var sum=0;
+    for(var y=0;y<n;y++){
+num[y]=parseInt(prompt("Enter no",""));
+
+sum+=num[y];
+
+}
+    
+         document.write("Addition is= "+sum+"<br>");
+var maxnum=num[0]; 
+var mini=num[0];      
+var loc=0; 
+var loc1=1;               
+    for(var y=0;y<n;y++){
+    
+        
+if(num[y]>maxnum){
+
+maxnum=num[y];
+loc=y+1;
+}
+if(num[y]<mini){
+mini=num[y];
+loc1=y+1;
+}
+document.write("["+(y+1)+"]="+num[y]+"<br>");
+}
+document.write("largest element is "+maxnum+"<br> location is"+loc+"<br>");
+document.write("lowest element is "+mini+"<br> location is"+loc1);
+</script>

@@ -1,0 +1,26 @@
+<html>
+
+<head>
+<script language=JavaScript>
+function inputs(){
+var num=parseInt(document.form1.value1.value);
+document.write("<form action=http//localhost/abc.php>");
+for(var k=1; k<num; k++){
+document.write("<input type=text name=data>");
+document.write("<BR>");
+}
+document.write("<input type=sumbit>");
+
+document.write("</form>");
+}
+</script>
+</head>
+
+<body>
+<form name=form1>
+<input type=NUMBER name=value1 >
+<input type=button value=OK onClick=inputs();>
+</form>
+</body>
+
+</html>

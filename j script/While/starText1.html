@@ -1,0 +1,31 @@
+<html>
+<head>
+<script language=javascript>
+function star(){
+var row=parseInt(document.form.value1.value);
+var col=parseInt(document.form.value2.value);
+var str='';
+for(var b=1;b<=row;b++){
+
+for(var a=1;a<=col;a++){
+str+="*";
+}
+str+="\n";
+
+document.form.result.value=str;
+}
+
+
+}
+</script>
+</head>
+<body>
+<form name=form>
+Enter Row No:<input type=text name=value1 maxlength=2><br>
+Enter cols No:<input type=text name=value2 maxlength=2><br>
+
+<input type=button value=PrintStar onClick=star();>
+<textArea name=result cols=20 rows=8> </textArea>
+</form>
+</body>
+</html>

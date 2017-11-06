@@ -1,0 +1,10 @@
+<script language=JavaScript>
+var email = prompt("Enter Email Adress","");
+var AtPos = email.indexOf("@");
+var StopPos = email.lastIndexOf(".");
+
+if (AtPos == -1 || StopPos == -1){ 
+document.write("Not a valid email address");
+
+}
+</script>

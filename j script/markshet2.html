@@ -1,0 +1,56 @@
+<html>
+<BODY>
+
+<script language=javascript>
+
+var s1=prompt("Enter C++ Marks","");
+var s2=prompt("Enter java Marks","");
+var s3=prompt("Enter php Marks","");
+var s4=prompt("Enter oricale Marks","");
+var s5=prompt("Enter vb Marks","");
+
+
+var a=parseInt(s1);
+var b=parseInt(s2);
+var c=parseInt(s3);
+var d=parseInt(s4);
+var e=parseInt(s5);
+
+var obtain=a+b+c+d+e;
+var a=obtain*100/500;
+
+
+if(a>=90 &&  a<=100){
+var grade=("A1");
+}
+
+if(a>=80 &&  a<=89){
+grade=("A");
+}
+
+if(a>=70 &&  a<=79){
+grade=("B");
+}
+
+if(a>=60 &&  a<=69){
+grade=("C");
+}
+
+if(a>=50 &&  a<=59){
+grade=("D");
+}
+
+if(a>=40 &&  a<=49){
+grade=("E");
+}
+
+if(a<39){
+grade=("You Are Fail");
+}
+
+alert("total Marks is :500\n Obtain marks is "+obtain+"\npersantage is:"+a+"%\ngrade is: "+grade);
+
+
+</script>
+</BODY>
+</html>

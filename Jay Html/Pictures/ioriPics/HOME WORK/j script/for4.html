@@ -1,0 +1,22 @@
+<html>
+<script language=JavaScript>
+function calc(){
+var table=parseInt(document.form.value1.value);
+var count=parseInt(document.form.value2.value);
+
+for(var b=1; b<=count; b++)
+
+document.write(table+"x "+b+"="+table*b+"<br>");
+}
+</script>
+
+
+<body>
+<form name=form>
+Enter Table No:<input type=text name=value1><br>
+Enter Count No:<input type=text name=value2><br>
+<input type=button value=ok   onClick=calc();>
+</form>
+</body>
+</html>
+

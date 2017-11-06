@@ -1,0 +1,22 @@
+<html>
+
+<script language=javascript>
+function calculate(form){
+form.results.value=eval(form.entry.value);
+}
+</script>
+<body>
+
+<form>
+Enter Mathematical Expression:
+<input type=text name=entry value="">
+<input type="button" value="Calculate" onclick="calculate(this.form);">
+<br>
+Result:<input type="text" name="results" onFocus="this.blur();">
+<br>
+</form>
+</body>
+</html>
+
+
+</html>

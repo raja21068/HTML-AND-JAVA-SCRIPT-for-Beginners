@@ -1,0 +1,32 @@
+<html>
+<head>
+<script language=JavaScript>
+function calc(){
+	var a=parseInt(document.form1.val1.value);
+	var b=parseInt(document.form1.val2.value);
+	var c=parseInt(document.form1.val3.value);
+if(a>b && a>c)document.form1.result.value=("1st age is greater than 2nd and 3rd age");
+if(b<a && b>c )document.form1.result.value=("2nd age is greater than 1st and 3rd age");
+if(c>a && c>b )document.form1.result.value=("3rd age is greater than 1st and 2nd age");
+if(a==b)document.form1.result.value=("1st age is Equal to 2nd age");
+if(b==c)document.form1.result.value=("2nd age is equal 3rd age");
+if(c==a)document.form1.result.value=("3rd age is Equal to 1st age");
+if(a==b && b==c)document.form1.result.value=("frist, second ?&3rd Age is Equal t");
+}
+</script>
+
+</head>
+
+<body>
+<form name=form1>
+Age1:<input type=text name=val1><br>
+Age2:<input type=text name=val2><br>
+Age3:<input type=text name=val3><br>
+
+Result:<input type=text name=result><br>
+<input type=button value=result onClick="calc();" ><br>
+</form>
+
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<html>
+
+<form name=cal>
+
+Enter frist value:<input type=text  name=value1><br>
+
+Enter second value:<input type=text name=value2><br>
+
+<input type=button value="+" onClick=add();>
+<input type=button value="*" onClick=mul();>
+<input type=button value="/" onClick=div();>
+<input type=button value="%" onClick=rem();>
+<br>
+
+Result:<input type=text name=result><br>
+
+<input type=button value="About me" onclick=about();>
+<input type=reset value="CLEAR" onclick=clear();>
+</form>
+
+<script language=JavaScript>
+function add(){
+var a=parseInt(document.cal.value1.value);
+var b=parseInt(document.cal.value2.value);
+document.cal.result.value=a+b;
+}
+function sub(){
+var a=parseInt(document.cal.value1.value);
+var b=parseInt(document.cal.value2.value);
+document.cal.result.value=a-b;
+}
+
+function mul(){
+var a=parseInt(document.cal.value1.value);
+var b=parseInt(document.cal.value2.value);
+document.cal.result.value=a*b;
+}
+
+function div(){
+var a=parseInt(document.cal.value1.value);
+var b=parseInt(document.cal.value2.value);
+document.cal.result.value=a/b;
+}
+
+function rem(){
+var a=parseInt(document.cal.value1.value);
+var b=parseInt(document.cal.value2.value);
+document.cal.result.value=a%b;
+}
+
+function about(){
+alert("my number = 03332836705");
+}
+
+function clear(){
+document.cal.value1.value= "";
+document.cal.value2.value= "";
+document.cal.result.value= "";
+}
+</script>
+</html>

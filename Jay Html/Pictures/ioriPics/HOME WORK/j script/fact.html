@@ -1,0 +1,24 @@
+<html>
+<head>
+<script language=JavaScript>
+  function calc(){
+	var n=parseInt(document.form.value1.value);
+	
+		for (var i=1,j=1;j<=n;j++)
+		i=i*j;
+	
+		document.write("factorial is= "+i);
+		
+  }
+</script>
+</head>
+
+
+<body>
+<form name=form>
+	Enter any NO:
+	<input type=text name=value1><br>
+	<input type=button value=ok onClick=calc();>
+</form>
+</body>
+</html>

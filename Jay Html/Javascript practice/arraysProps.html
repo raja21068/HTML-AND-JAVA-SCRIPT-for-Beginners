@@ -1,0 +1,43 @@
+<html>
+	<script language=javascript>
+		var guys = new Array("Ali","Hyder","Salman");
+		var chicks = new Array("Lisa", "Hannah", "sannah");
+		
+		//length
+		document.write(guys.length);
+		
+		//concat(array)
+		var peoples = guys.concat(chicks);
+		document.write("<br>"+peoples[4]+"<br>");
+		
+		//join()  converts an array into String
+		var str = peoples.join();
+		document.write(str+"<br>");
+
+		//join(seprator)
+		var string = peoples.join(" - ");
+		document.write(string+"<br>");
+		
+		//pop() last element is eliminated
+		peoples.pop();
+		document.write(peoples.join()+"<br>");
+		
+		//reverse()
+		peoples.reverse();
+		document.write(peoples.join()+"<br>");
+		
+		//push(element)
+		peoples.push("Areeba");
+		document.write(peoples.join()+"<br>");
+		
+		//push(element1,element2,....)
+		peoples.push("Johny Depp");
+		peoples.push("Angelina Joley");
+		document.write(peoples.join()+"<br>");
+		
+		//sort()
+		peoples.sort();
+		document.write(peoples.join()+"<br>");
+		
+	</script>
+</html>

@@ -1,0 +1,22 @@
+<html>
+<head>
+<script language=JavaScript>
+  function calc(){
+	var i=parseInt(document.form.value1.value);
+	document.write("<pre><h3><b>Odd    Even </h3></b></pre>");
+	for(var a=1,b=2;a<=i;a+=2,b+=2)
+		
+		document.write("<pre><h4>"+a+ "        " +b+"</h4><\pre><br>");
+  }
+</script>
+<head>
+
+
+<body>
+<form name=form>
+	Enter any NO:
+	<input type=text name=value1><br>
+	<input type=button value=ok onClick=calc();>
+</form>
+</body>
+</html>

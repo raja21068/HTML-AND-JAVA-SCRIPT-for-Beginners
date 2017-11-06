@@ -1,0 +1,24 @@
+<html>
+<head>
+<script language=JavaScript>
+  function calc(){
+	var n=parseInt(document.form.value1.value);
+ 		
+		for (var b=1;b<=n;b++)
+		
+				document.write("<pre>"+(b*b+1)+"      "+(b*b-1)+"</pre><br>");	
+				
+
+}  
+</script>
+</head>
+
+
+<body>
+<form name=form>
+	Enter any NO:
+	<input type=text name=value1><br>
+	<input type=button value=ok onClick=calc();>
+</form>
+</body>
+</html>

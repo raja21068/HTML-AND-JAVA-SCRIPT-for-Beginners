@@ -1,0 +1,25 @@
+<html>
+<head>
+<script language=JavaScript>
+function calc(){
+	var a=parseInt(document.form1.val1.value);
+	var b=parseInt(document.form1.val2.value);
+	document.form1.result.value=a+b;
+document.bgColor="blue";
+
+}
+</script>
+
+</head>
+
+<body>
+<form name=form1>
+<input type=text name=val1><br>
+<input type=text name=val2><br>
+
+<input type=text name=result onClick="calc();" ><br>
+</form>
+
+</body>
+
+</html>

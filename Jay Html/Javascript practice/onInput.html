@@ -1,0 +1,41 @@
+<html>
+	<script language=javascript>
+		function process(){
+			document.form1.text1.value=document.form1.monitor.value*5000;
+			document.form1.text2.value=document.form1.flatscreen.value*9000;
+			document.form1.total.value=parstInt(document.form1.text1.value)+parseInt(document.form1.text2.value);
+		}
+	</script>
+	
+	<form name=form1>
+		<table border=1>
+			<tr>
+				<th>S.No</th>
+				<th>Product</th>
+				<th>Price</th>
+				<th>Quantity</th>
+				<th>Total</th>
+			</tr>
+			
+			<tr>
+				<th>01</th>
+				<td>Monitor</td>
+				<td>5000</td>
+				<td><input type=number name=monitor onInput=process();></td>
+				<td><output name=text1 value=0>
+					</output>	
+				</td>
+			</tr>
+			
+			<tr>
+				<th>02</th>
+				<td>Screen</td>
+				<td>2000</td>
+				<td><input type=number name=flatscreen onInput=process();></td>
+				<td><output name=text2 value=0>
+					</output>
+				</td>
+			</tr>
+		</table>
+	</form>
+</html>

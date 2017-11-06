@@ -1,0 +1,22 @@
+<html>
+<head>
+<script language=JavaScript>
+  function calc(){
+	var i=parseInt(document.form.value1.value);
+	document.write("<pre><h3>Number    SQR      cube </h3><\pre>");
+	for(var a=1;a<=i;a++)
+		
+		document.write("<pre><h5>"+a+ "             "+(a*a)+"             "+(a*a*a)+"</h5></pre><br>");
+  }
+</script>
+<head>
+
+
+<body>
+<form name=form>
+	Enter any NO:
+	<input type=text name=value1><br>
+	<input type=button value=ok onClick=calc();>
+</form>
+</body>
+</html>

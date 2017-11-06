@@ -1,0 +1,22 @@
+<?php
+$user=$GET_['user'];
+$password=$GET_['password'];
+if($user=="raja" && password=="kumar"){
+echo"<frameset rows=10%,75%,*>";
+
+echo"<frameset cols=100%>";
+echo"<frame src="heading.html" name=display />";
+echo"</frameset>";
+
+echo"<frameset cols=25%,75%>";
+echo"<frame src=list.html name=list />"; 
+echo"<frame src= welcome.html name=welcome />"; 
+echo"</frameset>";
+
+
+echo"<frameset>";
+echo"<frame src="adrees.html"/>";
+echo"</frameset>";
+
+echo"</frameset>";
+?>

@@ -1,0 +1,44 @@
+<html>
+<head>
+<script language=JavaScript>
+function calc(){
+	var set=(document.form1.set.value);
+	var a=parseInt(document.form1.val1.value);
+	var b=parseInt(document.form1.val2.value);
+
+switch(set){
+case 1: document.form1.result.value=a+b;
+brek;
+case 2: document.form1.result.value=a-b;
+break;
+case 3: document.form1.result.value=a*b;
+break;
+case 4:document.form1.result.value=a/b;
+break;
+case 5:document.form1.result.value=a%b;
+default:
+	document.form1.result.value=("Invalid Operator");
+break;
+}
+</script>
+
+</head>
+
+
+<body>
+
+<form name=form1>
+
+
+<h2>Enter 1st Value:<input type=text name=val1><br>
+Enter 2nd Value:<input type=text name=val2></h2><br>
+
+<h1>Enter Opertor:<input type=text name=set></h1><br>
+<h1>result:<input type=text name=result onFocus=this.blur();><br>
+
+<input type=button value=calculate onClick="calc();" ><br></h1>
+</form>
+
+</body>
+
+</html>

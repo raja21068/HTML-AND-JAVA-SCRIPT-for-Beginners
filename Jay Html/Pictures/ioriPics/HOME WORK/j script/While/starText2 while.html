@@ -1,0 +1,34 @@
+<html>
+<head>
+<script language=javascript>
+function star(){
+var n=parseInt(document.form.value1.value);
+
+
+var b=0;
+var str='';
+while(b<=n){
+
+b++;
+var a=1;
+while(a<=b){
+
+str+=a;
+a++;
+}
+str+="\n";
+
+document.form.result.value=str;
+}
+
+}
+</script>
+</head>
+<body>
+<form name=form>
+Enter No:<input type=text name=value1 maxlength=2><br>
+<input type=button value=PrintStar onClick=star();>
+<textArea name=result cols=20 rows=8> </textArea>
+</form>
+</body>
+</html>

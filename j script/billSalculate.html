@@ -1,0 +1,35 @@
+<html>
+<head>
+<script language=JavaScript>
+function calc(){
+	
+	var a=parseInt(document.form1.val1.value);
+	
+if(a>=1 &&a<=100)document.form1.result.value=a*2;
+
+if(a>=100 &&a<=200)document.form1.result.value=(a*4-200);
+if(a>=200 &&a<=300)document.form1.result.value=a*6-600;
+if(a>=300 &&a<=400)document.form1.result.value=a*8-1200;
+if(a>400)document.form1.result.value=a*10-2000;
+
+}
+</script>
+
+</head>
+
+
+<body>
+
+<form name=form1>
+
+
+<h2>Enter Electric units:<input type=text name=val1></h2><br>
+<input type=button value=calculate onClick="calc();" ><br>
+
+
+Total Charges will be:<input type=text name=result onFocus=this.blur();><br>
+</form>
+
+</body>
+
+</html>

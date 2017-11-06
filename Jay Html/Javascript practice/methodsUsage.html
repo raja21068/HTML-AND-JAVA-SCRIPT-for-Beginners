@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<script language=javascript>
+			function constructor(par1 , par2){
+				this.p1=par1;
+				this.p2=par2;
+				this.varOfMethod = sayHello;
+				this.varOfMethod2 = sayHi;
+			}
+			function sayHello(){
+				return "hello";
+			}
+			function sayHi(){	
+				document.write("<br>hi<br>");
+				return "value";
+			}
+		</script>
+	</head>
+	
+	<body>
+		<script language=javascript>
+			ob = new constructor("some","thing");
+			var ob1=sayHi();
+			document.write(ob1);
+			//document.write(ob.p1+"<br>"+ ob.p2 +"<br>"+ob.varOfMethod() +"<br>"+ob.varOfMethod2());
+			//ob.varOfMethod2();
+			
+		</script>
+	</body>
+</html>

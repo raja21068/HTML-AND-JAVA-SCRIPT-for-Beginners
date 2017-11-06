@@ -1,0 +1,21 @@
+<html>
+<script language=javascript>
+function calc(){
+var a=parseInt(document.form.value1.value);
+var b=parseInt(document.form.value2.value);
+for(var i=1;i<=b;i++){
+
+
+document.write(a+"*"+i+"="+(i*a)+"<br>");
+
+}
+}
+</script>
+<BODY>
+<form name=form>
+Enter Table NO:<INPUT TYPE=TEXT NAME=value1><BR>
+Enter Counter NO:<INPUT TYPE=TEXT NAME=value2><BR>
+<input type=button value=Table onClick=calc();>
+</form>
+</BODY>
+</html>

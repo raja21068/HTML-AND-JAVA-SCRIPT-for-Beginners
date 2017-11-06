@@ -1,0 +1,17 @@
+<html>
+<head>
+<script type="text/javascript">
+function createDoc()
+  {
+  var doc=document.open("text/html","replace");
+  var a="<a href=http://www.google.com.pk> a</a>";
+  doc.write(a);
+  doc.close();
+  }
+</script>
+</head>
+
+<body>
+          ENTER WEB URL:<a href=http://www.google.com.pk><input type="button" value="New document"  onclick="createDoc()" />
+</body>
+</html> 

@@ -1,0 +1,42 @@
+<script language=JavaScript>
+	function process(){
+		document.form1.tax1.value=document.form1.monitor.value*5000;
+		document.form1.tax2.value=document.form1.flatscreen.value*9000;
+		document.form1.total.value=parseInt(document.form1.tax1.value)+parseInt(document.form1.tax2.value);
+	}
+</script>
+
+
+<form name=form1>
+
+<table>
+ <tr>
+   <th>SNO</th>
+   <th>Product  </th>
+   <th>Price </th> 
+   <th>Quantity</th>
+   <th>Amount</th>
+   <th>Discraption</th>
+</tr>
+
+<tr>
+	<th>01</th>
+	<td>monitor</td>
+	<td>5000</td>
+	<td><input type="number" name="monitor"  onInput="process();">
+	<td><output name="tax1" value=0></output></td>
+</tr>
+
+<tr>
+	<th>02</th>
+	<td>flatscreen</td>
+	<td>9000</td>
+	<td><input type="number" name="flatscreen" onInput="process();">
+	<td><output name="tax2" value=0></output></td>
+</tr>
+</table>
+
+
+Total:<output name="total" value=0></output>
+
+</form>

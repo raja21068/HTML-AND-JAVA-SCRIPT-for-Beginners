@@ -1,0 +1,309 @@
+INDEX OF BASIC HTML TAGS
+     Adapted from Laura Lemay, TEACH YOURSELF
+     WEB PUBLISHING WITH HTML IN A WEEK.
+          Indianapolis, 1995.
+
+COMMENTS:
+     <!-- ... -->
+
+STRUCTURE TAGS:
+     <HTML>...</HTML>
+     Enclose entire HTML document
+     Can incluede: <HEAD>, <BODY>
+
+     <HEAD>...</HEAD>
+     Encloses the head of the HTML document.
+     Can include: <TITLE>, <ISINDEX>, <BASE>,
+     <NEXTID>, <LINK>
+     Allowed inside: <HTML>
+
+     <BODY...</BODY>
+     Encloses the body (text and tags) of the HTML document. 
+     Can include: <H1>to<H6>, <P>, <UL>, <OL>,
+     <DIR>, <MENU>,<DL>, <PRE>, <BLOCKQUOTE.,
+     <FORM>, <ISINDEX>, <HR>, <ADDRESS>
+     Allowed Inside: <HEAD>
+
+     <BASE>
+     Indicates full URL of the current document
+     Attributes: HREF="..."; the full URL of this document.
+     Allowed inside: <HEAD>
+
+     <ISINDEX>
+     Indicates that this document is a gateway script that allows
+     searches
+     Allowed inside: <BLOCKQUOTE>, <BODY>, <DD>,
+     <FORM>, <HEAD>, <LI>
+
+     <LINK>
+     Indicates relationship between this document and some other
+     document. Generally used only by HTML-generating tools.
+     Attributes:
+     HREF="..."
+     REL="..."
+     REV="..."
+     URN="..."
+     TITLE="..."
+     METHODS="..."
+     Allowed inside: <HEAD>
+
+     <NEXTID>
+     Indicates the 'next'document to this one (as might be defined by
+     a tool to manage HTML documents in a series).
+     Attributes: N+"..."
+     Allowed inside: <HEAD>
+
+TITLE AND HEADINGS:
+     <TITLE>...</TITLE>
+     Allowed inside: <HEAD>
+     All headings have the following characteristics:
+     Can include: <A>, <IMG>, <BR>, <EM>,
+     <STRONG>, <CODE>, <SAMP>, <KBD>, <VAR>,
+     <CITE>, <TT>, <B>, <I>
+     Allowed inside: <BLOCKQUOTE>,<BODY>, <FORM>
+
+     <H!> through <H6>
+     First through sixth level headings
+
+PARAGRAPHS
+     <p>...</p.
+     A plain paragraph; in HTML 2.0 the closing tag is optional; in
+     3.0 it probably won't be, so let's include it in our documents.
+     Can include: <A>, <IMG>, <BR>,
+     <EM>,<STRONG>, <CODE>, <SAMP>, <KBD>,      
+     <VAR>, <CITE>, <TT>, <B>, <I>
+     Allowed inside: <BLOCKQUOTE>, <BODY>, <DD>,
+     <FORM>, <LI>
+
+LINKS
+     <a>...<?a>
+     With the HREF attribute, creates a link to another document or
+     anchor; with the same attribute, creates an anchor which can be
+     linked to.
+     Attributes: 
+     HREF="..."
+     NAME="..."
+     Can include: <IMG>, <BR>, <EM>, <STRONG>,
+     <CODE>, <SAMP>, <KBD>, <VAR>, CITE>,
+     <TT>, <B>, <I>
+     Allowed inside: <ADDRESS>, <B>, <CITE>,
+     <CODE>, <DD>, <DT>, <EM>, <H1> to <H6>,
+     <I>, <KBD>, <LI>, <P>, <PRE>, <SAMP>,
+     <STRONG>, <TT>, <VAR>
+
+LISTS
+     <OL>...</OL>
+     An ordered (numbered) list.
+     Can include: <LI>
+     Allowed inside: <BLOCKQUOTE>, <BODY>, <DD>,
+     <FORM>, <LI>
+
+     <UL>...</UL>
+     an Unordered (bulleted) list.
+     Can include: <LT>
+     Allowed inside:: <BLOCKQUOTE>, <BODY>, <DD>,
+     <FORM>, <LI>
+
+     <MENU>...</MENU>
+     A menu list of items.
+     Can include: <LI>
+     Allowed inside: <BLOCKQUOTE>, <BODY>, <DD>,
+     <FORM>, <LI>
+
+     <DIR>...</DIR>
+     A directory listing; items are usually less than 20 characters.
+     Can include: <LI>
+     Allowed inside: <BLOCKQUOTE>, <BODY>, <DD>,
+     <FORM>, <LI>
+
+     <LI>
+     A list item for use with <OL>, <UL>, <MENU>, or
+     <DIR>
+     Can include: <A>, <IMG>, <BR>, <EM>,
+     <STRONG>, <CODE>, <SAMP>, <KBD>, <VAR>,
+     <CITE>, <TT>, <B>, <I>, <P>, <UL>, <OL>,
+     <DIR>, <MENU>, <DL>, <PRE>,
+     <BLOCKQUOTE>
+     Allowed inside: <DIR>, <MENU>, <OL>, <UL>
+
+     <DL>...</dL>
+     A definition or glossary list.  The COMPACT attribute provides
+     a formatting that takes less white space to present.
+     Attributes: COMPACT
+     Can include: <DD>, <DT>
+     Allowed inside: <BLOCKQUOTE>, <BODY>, <DD>,
+     <FORM>, <LI>
+
+     <DT>
+     A definition term, as part of a definition list.
+     Can include: <A>, <IMG>, <BR>, <EM>,
+     <STRONG>, <CODE>, <SAMP>, <KBD>, <VAR>,
+     <CITE>, <TT>, <B>, <I>
+     Allowed in side: <DL>
+
+     <DD>
+     The corresponding definition to a definition term, as part of a
+     definition list.
+     Can include: <A>, <IMG>, <BR>, <EM>,
+     <STRONG>, <CODE>, <SAMP>, <KBD>, <VAR>,
+     <CITE>, <TT>, <B>, <I>, <P>, <UL., <OL>,
+     <DIR>, <menu>, DL>, <PRE>, <BLOCKQUOTE>,
+     <FORM>, <ISINDEX>
+     Allowed inside: <DL>
+
+     CHARACTER FORMATTING
+      All the character formatting tags have these features:
+     Can include:  <A>, <IMG>, <BR>, <EM>,
+     <STRONG>, <CODE>, <SAMP>, <KBD>, <VAR>,
+     <CITE>, <TT>, <B>, <I>
+     Allowed inside: <A>, <ADDRESS>, <B>, <CITE>,
+     <CODE>, <DD>, <DT>, <EM>, <H1> to <H6>,
+     <I>, <KBD>, <LI>, <P>, <PRE>, <SAMP>,
+     <STRONG>, <TT>, <VAR>
+     Attributes: 
+     <EM>...</EM> Emphasis, usuallyitalic.
+     <STRONG>>...</STRONG> Stronger emphasis, usually
+     bold.
+     <CODE>...</CODE> Code sample, usually Courier.
+     <KBD>...</KBD> Text to be typed, usually Courier.
+     <VAR>...</VAR> A variable or placeholder for some other
+     value.
+     <SAMP>...</SAMP> Sample text.
+     <CITE>...</CITE> A Citation.
+     <B>...</B> Boldface text.
+     <I>...</I> Italic text.
+     <TT>...</TT> Typewriter font. 
+
+OTHER ELEMENTS
+
+     C<FONT SIZE=-1rossroads</FONT>
+     Reduces the size of the font on the indicated letters by one measure;fonts can be increased or
+      decreased in size.
+
+     <HR>
+     Horizontal line.
+     Allowed inside: <BLOCKQUOTE>, <BODY>, <FORM>,
+     <PRE>
+
+    <HR Size=4> Sets width of Hard Rule
+     
+     <BR>
+     Line break.
+     Allowed inside: <Q>, <ADDRESS>, <B>, <CITE>,
+     <CODE>, <DD>, <DT>, <EM>, <H1> t o <H6>,
+     <I>, <KBD>, <LI>, <P>, <PRE>, <SAMP><
+     <STRONG>, <TT>, <VAR>
+
+     <CENTER></CENTER> Centers a line of text.
+
+    <BLINK></BLINK>
+       Blinks the text; should be used sparingly.
+
+     <BLOCKQUOTE>
+     Used for long quotations or citations.
+     Can include: <BLOCKQUOTE>, <H1> to <H6>, <P>,
+     <UL>, <OL>, <DIR>, <MENU>, <DL>, <PRE>,
+     <BLOCKQUOTE>, <FORM>, <ISINDEX>, <HR>,
+     <ADDRESS>, </BLOCKQUOTE>
+     Allowed inside: <BLOCKQUOTE>, <BODY>, <DD>,
+     <FORM>, <LI>
+
+     <ADDRESS>...</ADDRESS>
+     Used for signatures or general information about a document's
+     author.
+     Can include: <A>, <IMG>, <BR>, <EM>,
+     <STRONG>, <CODE>, <SAMP>, <KBD>, <VAR>,
+     <CITE>, <TT>< <B>, <I>
+     Allowed inside: <BLOCKQUOTE>, <BODY>, <FORM>
+
+IMAGES
+
+      <Border=O> Sets width of border around an image; must be included within the image source 
+      tag, e.g., <IMG SRC=flag2a.gif Border=2></A>
+
+     <IMG> 
+     Insert an inline image..
+     Attributes: 
+     SRC="..." The URL of the image.
+     ALT="..." Text to be displayed if client browser does not
+     support graphics..
+     ALIGN="'TOP, MIDDLE, or BOTTOM"  Relation of image
+     to line.
+     ISMAP  This image is a clickable image map.
+     Allowed inside: <A>, <H6>, <I>, <KBD>, <LI>,
+     <P>, <SAMP>, <STRONG>, <TT>, <VAR>
+
+FORMS
+
+    <A HREF="mailto:your email address"> Your name and email address</A> 
+     Automatically elicits a form for sending a message to the owner of the page -- or whoever.
+
+     <FORM>...</FORM>
+     Attributes:
+     :ACTION"..." The URL of the scrip to perform to process this
+     form input.
+     METHOD"..." How the form input will be sent to the gateway
+     on the server side: possible values are GET or POST.
+     ENCTYPE="..." Only one value now; application/x-www-
+     form-unencoded. 
+     Can include: <H1> to <H6>, <P>, <UL>, <OL>,
+     <DIR>, <MENU>, <DL>, <PRE>,
+     <BLOCKQUOTE>, <ISINDEX>, <HR>,
+     <ADDRESS>, <INPUT>, <Select>, <TEXTAREA>
+     Allowed inside: <BLOCKQUOTE>, <BODY>m <DD>,
+     <LI>
+
+     <INPUT>
+     An input widget for a form.
+     Attributes:
+     TYPE="..." The type of input widget; possible valu;es are
+     CHECKBOX, HIDDEN,  RADIO, RESET, SUBMI:T, TEXT,
+     IMAGE
+     NAME="..." The name of this item, as passed to the gateway
+     script as part of the name/value pair.
+     VALUE="..."  For a text or hidden widget, the default value;
+     for a check box or radio button, the valu;e to be su;bmitted with
+     the form; for Reset or Submit buttons, the label for the button
+     itself.
+     SRC+"..." The Source file for an image.
+     CHECKED For checkboxes and radio buttons, indicates that the    
+     widget is checked.
+     SIZE="..." Size, in characters, of a text widgetl. 
+     MAXLENGTH="..." The maximum number of characters than
+     can be entered into a text widget.
+     ALIGN="..."  For images in forms; determines how text and
+     image align.
+     Allowed inside: <FORM>
+     <TEXTAREA>...</TEXTAREA>
+     indicates multiline text entry widget.
+     Attributes: 
+     NAME="..." The name to be passed to the gateway script as
+     part of the name/value pair.
+     ROWS="..." The number of rows this text area displays.
+     COLS="..." The number of columns (characters) this text area
+     displays.
+     Allowed inside: <FORM>
+
+`    <SELECT>...</SELECT>
+     Creates a menu or scrolling list of possible items. 
+     Attributes: 
+     NAME="..." The name that is passed to the gateway script as
+     part of the name/value pair. 
+     SIZE="..." The nu;mber of elements to display. If SIZE is
+     indicated, the selection becomes a scrolling list.  If not SIZE is
+     give, the selection is a pop-up menu;.
+     MULTIPLE Allows multiple selections from the list.
+     Can include: <OPTION>
+     Allowed inside: <FORM>
+     <OPTION>
+     Indicates a possible item with a <SELECT> widget.
+     Attributes: Indicates a possible item within a <SELECT>
+     widget.
+     Attributes: 
+     SELECTED With this attribute icuded, the <OPTION> will be
+     selcted by default in th list.
+     VALUE="..."
+     The value to submit if this <OPTION> will be selected by
+     default in the list when the form is submitted.
+     Allowed inside: <SELECT>
+     

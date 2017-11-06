@@ -1,0 +1,27 @@
+<script language=javascript>
+var num=new Array();
+var n=parseInt(prompt("Enter Array size ",""));
+
+var sum=0;
+    for(var y=0;y<n;y++){
+num[y]=parseInt(prompt("Enter no",""));
+
+sum+=num[y];
+
+}
+    
+         document.write("Addition is= "+sum+"<br>");
+var maxnum=num[0];       
+var loc=0;                
+    for(var y=0;y<n;y++){
+    
+        
+if(num[y]>maxnum){
+
+maxnum=num[y];
+loc=y+1;
+}
+document.write("["+(y+1)+"]="+num[y]+"<br>");
+}
+document.write("largest element is "+maxnum+"<br> location is"+loc);
+</script>

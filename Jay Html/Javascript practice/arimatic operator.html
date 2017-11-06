@@ -1,0 +1,23 @@
+<html>
+	<form name=form>
+		VB<input type=text name=vb><br>
+		C++<input type=text name=c><br>
+		java<input type=text name=java><br>
+		php<input type=text name=php><br>
+		.NET<input type=text name=net><br>
+		<input type=button value="OK" onClick=marks()><br>
+		<input type=text name=total>
+	</form>
+	<script language=javascript>
+		function marks(){
+			var vb = parseInt(document.form.vb.value);
+			var c = parseInt(document.form.c.value);
+			var java = parseInt(document.form.java.value);
+			var php = parseInt(document.form.php.value);
+			var net = parseInt(document.form.net.value);
+			//alert("VB : "+vb+"\nC++ : "+c+"\njava : "+java+"\nphp : "+php+"\n.NET : "+net+"\nTotal marks: "+(net+php+java+c+vb));
+			//document.write("Total marks: "+(net+php+java+c+vb));
+			document.form.total.value=(net+php+java+c+vb);
+		}
+	</script>
+</html>

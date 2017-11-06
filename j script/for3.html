@@ -1,0 +1,18 @@
+<html>
+<script language=JavaScript>
+function calc(){
+var a=parseInt(document.form.value1.value);
+for(var b=2; b<=a; b+=2)
+document.write(b+"<br/>")
+}
+</script>
+
+
+<body>
+<form name=form>
+Enter any No:<input type=text name=value1 maxlength=2> <BR/>
+<input type=button value=ok onClick=calc();>
+</form>
+</body>
+</html>
+
